@@ -1,64 +1,55 @@
 /* Fuente general y fondo */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f5e1a4;
+    background-color: #cf5a5a;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 /* Estilo de la barra de navegación */
 .navbar {
-    background-color: #d2232a;
-    padding: 10px 0;
+    background-image: url(/images/portada.jpg);
+    height: 20vh;
 }
 
-.navbar-brand {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
+#logo {
+    width: 35vw;
+    height: auto;
+    margin-left: -3vw;
 }
 
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-toggler-icon {
-    filter: invert(1);
-}
-
-/* Centrar elementos del menú hamburguesa */
-.navbar-nav {
-    width: 100%;
-}
-
-.navbar-nav .nav-item {
-    margin: 5px 0;
-}
-
-.nav-link {
-    color: white !important;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.nav-link:hover {
-    color: #ffd700 !important;
-}
-
-/* Hero (Imagen principal) */
-.hero {
-    background: url('https://i.imgur.com/XFflclj.jpg') center/cover no-repeat;
-    height: 300px;
+.categorias-container {
+    background-color: #fff;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.hero h1 {
-    background: rgba(0, 0, 0, 0.7);
+.categoria {
+    color: #d2232a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #ffe8cc;
+    transition: 0.3s;
+}
+
+.categoria:hover {
+    background-color: #d2232a;
     color: white;
-    padding: 15px 25px;
-    border-radius: 10px;
-    font-size: 32px;
+}
+
+/* Estilos del menú */
+h2 {
+    text-align: center;
+    color: #d2232a !important;
+    background-color: #ffe8cc;
+    border-radius: 20px;
+    margin: 23vw;
 }
