@@ -3,7 +3,8 @@
     src: url('/fonts/go3v2.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-} 
+}
+
 /* Fuente general y fondo */
 body {
     font-family: 'Arial', sans-serif;
@@ -12,13 +13,17 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     cursor: url('/images/kunai.png') 4 0, auto !important;
+    background-image: url(/images/fondo2.jpg);
+    
 }
 
-h1, h2,
+h1,
+h2,
 .titulo-menu,
-#btn-iniciar, #inicio-experiencia{
+#btn-iniciar,
+#inicio-experiencia {
     font-family: 'Gang of Three', sans-serif !important;
-} 
+}
 
 /* Estilo de la barra de navegación */
 .navbar {
@@ -32,18 +37,44 @@ h1, h2,
     margin-left: -3vw;
 }
 
+/* Estilo de la barra de botones */
 .categorias-container {
-    background-color: #fff;
+    height: 15vh;
+    background-image: url(/images/pergamino.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(2px);
+    padding: 3cap;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 9px;
     position: sticky;
     top: 0;
     z-index: 1000;
     font-family: 'Gang of Three', sans-serif !important;
 }
 
+/* Estilo de botones - categorias */
+.categoria {
+    background-image: url('/images/pergamino-textura.jpg');
+    background-size: cover;
+    border: none;
+    padding: 10px 20px;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Papyrus', fantasy;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #00000050;
+    transition: transform 0.3s ease;
+}
+
+.categoria:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo con fuente Gang of three y roja
 .categoria {
     color: #d2232a;
     text-decoration: none;
@@ -58,6 +89,7 @@ h1, h2,
     background-color: #d2232a;
     color: white;
 }
+*/
 
 /* Estilos del menú */
 h2 {
@@ -66,9 +98,35 @@ h2 {
     background-color: #ffe8cc;
     border-radius: 20px;
     margin: 23vw;
+    margin-top: 2vh !important;
 }
 
-/* Boton de mísica */
+/* Estilo de las tarjetas de los platos*/
+.comida-card {
+    background: rgba(255, 255, 255, 0.2) !important;/* blanco con transparencia */
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(10px) !important;/* efecto vidrio */
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    color: #fff !important;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.comida-card:hover {
+    transform: scale(1.05);
+}
+
+.card-title,
+.card-text {
+    text-align: center;
+}
+
+
+/* Boton de música */
 .inicio-overlay {
     position: fixed;
     top: 0;

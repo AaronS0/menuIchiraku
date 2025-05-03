@@ -27,52 +27,54 @@
             <a href="/index.html"><img id="logo" src="/images/logo.png" alt="logo"></a>
         </div>
     </nav>
-        <!-- Categorías del menú -->
+
+    <!-- Categorías del menú -->
     <div class="categorias-container text-center py-3">
-        <a href="#entradas" class="categoria">Entradas</a>
-        <a href="#ramen" class="categoria">Ramen</a>
-        <a href="#sushi" class="categoria">Sushi</a>
-        <a href="#wok" class="categoria">Wok</a>
+        <a href="#entradas"><button class="categoria">Entradas</button></a>
+        <a href="#ramen"><button class="categoria">Ramen</button></a>
+        <a href="#sushi"><button class="categoria">Sushi</button></a>
+        <a href="#wok"><button class="categoria">Wok</button></a>
         <a href="#postres"><button class="categoria">Postres</button></a>
-        <a href="#bebidas" class="categoria">Bebidas</a>
+        <a href="#bebidas"><button class="categoria">Bebidas</button></a>
     </div>
 
     <!-- Menú -->
     <main>
         <section id="entradas" class="py-4" style="scroll-margin-top: 106px;">
             <div class="container">
-                <h2>Entradas</h2>
-                <!-- Aquí irán los platos -->
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores dolor, consequuntur excepturi
-                        asperiores et autem officia eligendi tempore soluta, assumenda porro obcaecati accusamus nostrum
-                        similique maxime. Blanditiis pariatur id accusantium.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consectetur non exercitationem
-                        quam itaque dolorum eius debitis numquam, error rem placeat labore quasi, possimus expedita
-                        praesentium dignissimos voluptas, fugit explicabo?</li>
-                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, repellat reiciendis rerum
-                        magnam
-                        consectetur excepturi neque, est numquam voluptatibus vel, itaque ex maiores vero repudiandae
-                        sapiente totam quibusdam eveniet nostrum?</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatem eligendi ipsum aut
-                        doloribus, ab culpa fuga, tempore at alias non odio maiores repellendus dolorem quo magnam animi
-                        tempora nemo?</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores dolor, consequuntur excepturi
-                        asperiores et autem officia eligendi tempore soluta, assumenda porro obcaecati accusamus nostrum
-                        similique maxime. Blanditiis pariatur id accusantium.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consectetur non exercitationem
-                        quam itaque dolorum eius debitis numquam, error rem placeat labore quasi, possimus expedita
-                        praesentium dignissimos voluptas, fugit explicabo?</li>
-                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, repellat reiciendis rerum
-                        magnam
-                        consectetur excepturi neque, est numquam voluptatibus vel, itaque ex maiores vero repudiandae
-                        sapiente totam quibusdam eveniet nostrum?</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatem eligendi ipsum aut
-                        doloribus, ab culpa fuga, tempore at alias non odio maiores repellendus dolorem quo magnam animi
-                        tempora nemo?</li>
-                </ul>
+                <h2 class="text-center mb-4">Entradas</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card comida-card text-center">
+                            <div class="card-body">
+                                <img src="/images/logo.png" alt="Gyozas">
+                                <h5 class="card-title">Gyozas</h5>
+                                <p class="card-text">Empanadillas japonesas rellenas de carne y vegetales.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repite este bloque por cada comida -->
+                    <div class="container mt-4">
+                        <div class="row g-3">
+                          <div class="col-md-6">
+                            <div class="comida-card p-3 text-center">
+                              <h5>Ramen Ichiraku</h5>
+                              <p>Ramen clásico con caldo de cerdo y huevo</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="comida-card p-3 text-center">
+                              <h5>Ramen Picante</h5>
+                              <p>Ramen con chile, cerdo y huevo cocido</p>
+                            </div>
+                          </div>
+                          <!-- Puedes seguir agregando más -->
+                        </div>
+                      </div>
+                </div>
             </div>
         </section>
+
 
         <section id="ramen" class="py-4" style="scroll-margin-top: 106px;">
             <div class="container">
