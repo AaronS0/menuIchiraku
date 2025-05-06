@@ -16,3 +16,35 @@ document.querySelectorAll('.categoria').forEach(el => {
         sonidoClick.play();
     });
 });
+
+//Tarjetas
+function toggleCard(card) {
+    const allCards = document.querySelectorAll('.card');
+
+    allCards.forEach(c => {
+        if (c !== card && c.classList.contains('expanded')) {
+            c.classList.remove('expanded');
+            const img = c.querySelector('img');
+            fadeImage(img, img.dataset.original);
+        }
+    });
+
+    const isExpanding = !card.classList.contains('expanded');
+    card.classList.toggle('expanded');
+
+    const img = card.querySelector('img');
+    const newSrc = isExpanding ? img.dataset.expanded : img.dataset.original;
+
+    fadeImage(img, newSrc);
+}
+
+function fadeImage(img, newSrc) {
+    img.classList.add('fading');
+    setTimeout(() => {
+        img.src = newSrc;
+        img.onload = () => {
+            img.classList.remove('fading');
+        };
+    }, 200);
+}
+
