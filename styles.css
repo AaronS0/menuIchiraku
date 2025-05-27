@@ -53,7 +53,6 @@ h2,
     position: sticky;
     top: 0;
     z-index: 1000;
-    font-family: 'Gang of Three', sans-serif !important;
 }
 
 /* Estilo de botones - categorias */
@@ -61,10 +60,9 @@ h2,
     background-image: url('/images/pergamino-textura.jpg');
     background-size: cover;
     border: none;
+    font-family: 'Gang of Three', sans-serif !important;
     padding: 10px 20px;
-    color: #000;
-    font-weight: bold;
-    font-family: 'Papyrus', fantasy;
+    color: #383333;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #00000050;
     transition: transform 0.3s ease;
@@ -72,24 +70,52 @@ h2,
 
 .categoria:hover {
     transform: scale(1.05);
+    color: #ff4500;
+    border: solid 1px rgb(112, 82, 68);
 }
 
-/* Estilo con fuente Gang of three y roja
-.categoria {
-    color: #d2232a;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 20px;
-    background-color: #ffe8cc;
-    transition: 0.3s;
+
+
+
+
+#btnInfantil {
+  background-color: #f472b6;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.categoria:hover {
-    background-color: #d2232a;
-    color: white;
+#btnInfantil:hover {
+  background-color: #ec4899;
+  position: sticky;
 }
-*/
+
+.menuInfantil {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: url(/images/fondo1.jpg);
+  background-size: contain;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+
+.menuInfantil h2 {
+  font-size: 2rem;
+  text-shadow: 2px 2px #000;
+}
+
+
+
 
 /* Estilos del menú */
 h2 {
